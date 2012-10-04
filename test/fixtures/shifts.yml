@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  start: 2012-10-04 15:47:22
+  end: 2012-10-04 15:47:22
+  machine_id: 
+  product_id: 
+
+two:
+  start: 2012-10-04 15:47:22
+  end: 2012-10-04 15:47:22
+  machine_id: 
+  product_id: 

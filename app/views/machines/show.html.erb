@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @machine.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @machine.description %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @machine.number %>
+</p>
+
+
+<%= link_to 'Edit', edit_machine_path(@machine) %> |
+<%= link_to 'Back', machines_path %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @timedown.description %>
+</p>
+
+<p>
+  <b>Shift:</b>
+  <%= @timedown.shift_id %>
+</p>
+
+<p>
+  <b>Start:</b>
+  <%= @timedown.start %>
+</p>
+
+<p>
+  <b>End:</b>
+  <%= @timedown.end %>
+</p>
+
+
+<%= link_to 'Edit', edit_timedown_path(@timedown) %> |
+<%= link_to 'Back', timedowns_path %>

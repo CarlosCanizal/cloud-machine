@@ -1,0 +1,29 @@
+<h1>Listing timedowns</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Shift</th>
+    <th>Start</th>
+    <th>End</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @timedowns.each do |timedown| %>
+  <tr>
+    <td><%= timedown.description %></td>
+    <td><%= timedown.shift_id %></td>
+    <td><%= timedown.start %></td>
+    <td><%= timedown.end %></td>
+    <td><%= link_to 'Show', timedown %></td>
+    <td><%= link_to 'Edit', edit_timedown_path(timedown) %></td>
+    <td><%= link_to 'Destroy', timedown, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Timedown', new_timedown_path %>
